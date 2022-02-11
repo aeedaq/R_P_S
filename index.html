@@ -1,2 +1,57 @@
-<h3>your favourite mini game!</h3>
-<h1>Rock Paper or Scissors</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Rock Paper or Scissors</h1>
+  <div class="main">
+
+    <div class="player">
+      <a onclick="rock()" class="u_rock">
+        <img id="choice_pic" src="img/rock.jpeg"></a>
+
+      <a onclick="paper()" class="u_paper">
+        <img id="choice_pic" src="img/paper.jpeg"></a>
+
+      <a onclick="scissors()" class="u_scissors">
+        <img id="choice_pic" src="img/scissors.jpeg"></a>
+    </div>
+
+    <div id="result_div">
+      <h3 id="result_show"></h3>
+      <div id="main_result">
+        <div id="show">
+          <div class="p_show">
+            <p class="text">you:</p>
+            <p id="p_choice">
+              <img id="p_choice_pic"></p>
+          </div>
+
+          <div class="s_show">
+            <p id="score"></p>
+          </div>
+
+          <div class="c_show">
+            <p class="text">computer:</p>
+            <p id="c_choice"><img id="c_choice_pic"> </p>
+          </div>
+
+        </div>
+        <h3 id="who"></h3>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
